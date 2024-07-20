@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>converter</title>
+    <link rel="stylesheet" href="styling.css"
+</head>
+<body>
+    <div id="wrapper">
+        <h2> cm to inches</h2>
+        <div class="inputdiv"> <input type="text" id="input" placeholder="lengh in cm"</div>
+
+        
+        
+
+    </div>
+    <div>
+        <button type="submit"  onclick="convert()">sumbit</button>
+    </div>
+    <div id="result">
+
+    </div>
+    <script>
+           function convert(){
+
+            let val=Number(document.getElementById("input").value)
+            let inchval = val/2.54
+            let result = document.getElementById("result")
+            result.innerHTML = inchval
+
+           }
+        let v = 5
+        let f = 95
+        let sc = `you have ${v},items in your cart. your bill amount is ${f}`
+
+        
+        console.log(sc)
+
+        let marks = [2,3,4,5,6]
+        
+        console.log(marks[marks.length-1])
+        let matrix = [[3,2,1],[1,2,3]]
+        console.log(matrix[0][0])
+
+
+
+
+            
+</script>
+
+   
+    
+</body>
+</html>
